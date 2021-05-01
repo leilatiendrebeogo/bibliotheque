@@ -1,0 +1,61 @@
+
+body{
+    background-color: rgb(216, 209, 209);
+}
+.entete{
+    background-color: rgb(21, 184, 21);
+}
+.logo{
+    padding: 15px;
+    padding-left: 20px;
+    
+}
+.contenu{
+    background-color: honeydew;
+    margin-top: 30px;
+}
+.slide{
+    background-color:grey;
+
+}
+.milieu{
+    padding-top: 20px;
+}
+.nav{
+    padding-left: 2px;
+    border-color: black solid 2px;
+}
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.bouton{
+    height: 20px;
+}
+.box {
+    transition: box-shadow .3s;
+    height: 60px;
+    border: 1px solid #ccc;
+    background: #fff;
+
+ }
+  .box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+  .boxtype1{
+    height: 200px;
+    border-bottom: solid 3px rgb(32, 154, 255);
+   margin: 5px;
+  }
+  .boxtype2{
+    margin: 0%;
+  }
+  
+
+   hr{
+     background-color: rgb(77, 145, 10);
+      height: 2px;
+   }
+  
+  
