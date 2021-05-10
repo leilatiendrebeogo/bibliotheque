@@ -11,6 +11,7 @@
     <link rel="icon" href="{{asset('img/livre2.png') }}">
     <link href="{{asset('css/style2.css')}}" rel="stylesheet">
     <link href="{{asset('css/style4.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/accordeon.css')}}">
     <title>Accusoft admin</title>
 </head>
 <body>
@@ -38,13 +39,16 @@
                 <a href="{{route('liste.livre')}}"><span class="las la-shopping-bag" ></span><span>liste des livres</span></a>
             </li>
             <li>
-                <a href="{{route('liste.livre')}}"><span class="las la-shopping-bag" ></span><span>liste des livre en stock</span></a>
+                <a href="{{route('liste.livre.auteur')}}"><span class="las la-shopping-bag" ></span><span>Nombre  de livres par auteur</span></a>
             </li>
+            <li>
+                <a href="{{route('accordeon')}}"><span class="las la-receipt" ></span><span>liste des livre par auteurs </span></a>
+                </li>
             <li>
             <a href="{{route('genre.form')}}"><span class="las la-receipt" ></span><span>categrories</span></a>
             </li>
             <li>
-            <a href="{{ route('register') }"><span class="las la-user-circle" ></span><span>Ajouter admin</span></a>
+            <a href="{{route('register') }}"><span class="las la-user-circle" ></span><span>Ajouter admin</span></a>
             </li>
             <li>
                 <a href="{{route('inscrit.form')}}"><span class="las la-user-circle" ></span><span>Ajouter membre</span></a>

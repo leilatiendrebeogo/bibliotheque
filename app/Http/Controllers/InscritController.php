@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Inscrit;
 use Illuminate\Http\Request;
 
 class InscritController extends Controller
@@ -24,5 +25,9 @@ class InscritController extends Controller
         $livre->email = $request->email;
         $livre->save();
         return "C'est bien enregistré !";
+    }
+    public function liste_inscrit(){
+        $inscrit = Inscrit ::all();
+        return view('liste_inscrit', compact('inscrit'));
     }
 }

@@ -21,6 +21,11 @@ Route::post('/user_store', 'UserController@user_store')->name('user.store');
 Route::get('/livre', 'LivreController@livre_form')->name('livre.form');
 Route::post('/livre', 'LivreController@enregistrer_livre')->name('enregistrer.livre');
 Route::get('/liste_livre', 'LivreController@liste_livre')->name('liste.livre');
+Route::get('/liste_auteur', 'LivreController@liste_par_auteur')->name('liste.livre.auteur');
+
+Route::get('/liste_accordeon', 'LivreController@liste_en_accordeon')->name('accordeon');
+
+
 
 Route::get('/emprunnt_form','LivreController@emprunt_form')->name('emprunt.form');
 Route::post('/enregistrer_emprunt','LivreController@enregistrer_emprunt')->name('enregistrer.emprunt');
